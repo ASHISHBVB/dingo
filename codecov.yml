@@ -1,0 +1,25 @@
+coverage:
+  status:
+    project:
+      default:
+        target: 80%
+        threshold: 1%
+    patch:
+      default:
+        target: 80%
+        threshold: 1%
+
+comment: false
+
+ignore:
+  - "tests/*"
+  - "setup.py"
+  - "build.py"
+  - "doc/*"
+  - "*.pyx"
+  - "*.pxd"
+  - "*.pxi"
+  - "*.h"
+  - "*.cpp"
+  - "*.c"
+  - "*.hpp" 
