@@ -6,11 +6,11 @@ authors = ["Apostolos Chalkis <tolis.chal@gmail.com>"]
 build = 'build.py'
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = ">=3.8,<3.9"  # Pin to Python 3.8
 sparseqr = {git = "https://github.com/yig/PySPQR.git"}
 simplejson = "^3.17.2"
 Cython = "^0.29.22"
-numpy = "^1.20.1"
+numpy = "1.20.1"  # Pin to exact version
 scipy = "^1.6.1"
 argparse = "^1.4.0"
 matplotlib = "^3.4.1"
@@ -20,9 +20,9 @@ kaleido = "0.2.1"
 pyoptinterface = {version = "^0.2.7", extras = ["highs"]}
 networkx = "3.1"
 
-[tool.poetry.dev-dependencies]
-pytest = "^6.2.5"
-pytest-cov = "^2.12.1"
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2.4"
+pytest-cov = "^2.12.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0", "cython", "numpy==1.20.1"]
